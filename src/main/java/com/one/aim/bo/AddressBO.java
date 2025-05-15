@@ -1,6 +1,5 @@
 package com.one.aim.bo;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -17,28 +16,28 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "cart")
-public class CartBO {
+@Table(name = "address")
+public class AddressBO {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-	private String pname;
+    private String fullName;
 
-	@Column(name = "`desc`")
-	private String desc;
+    private String street;
 
-	private long price;
+    private String city;
 
-	private String category;
+    private String state;
 
-	private boolean enabled = true;
+    private String zip;
 
-	private int offer;
-	
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "user_id")
-	private UserBO user;
+    private String country;
 
+    private String phone;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private UserBO user;
 }
