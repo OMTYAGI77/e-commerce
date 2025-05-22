@@ -1,29 +1,32 @@
 package com.one.aim.rq;
 
-import com.one.vm.core.BaseVM;
+import com.one.aim.bo.UserBO;
 
+import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
-public class AddressRq extends BaseVM {
+public class AddressRq {
+	
+	    private String fullName;
 
-	private static final long serialVersionUID = 1L;
+	    private String street;
 
-	private String fullName;
+	    private String city;
 
-	private String street;
+	    private String state;
 
-	private String city;
+	    private String zip;
 
-	private String state;
+	    private String country;
 
-	private String zip;
+	    private String phone;
 
-	private String country;
-
-	private String phone;
-
-	private long userId;
+	    @ManyToOne(fetch = FetchType.LAZY)
+	    @JoinColumn(name = "user_id")
+	    private UserBO user;
 }

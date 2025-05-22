@@ -37,21 +37,5 @@ public class ErrorCodes {
 	public static final String EC_REQUIRED_DOCID = "EC_REQUIRED_DOCID";
 
 	public static final String EC_ALLOWED_FILE_TYPES = "EC_ALLOWED_FILE_TYPES";
-	
-	public static final String EC_REQUIRED_FULL_ADDRESS = "EC_REQUIRED_FULL_ADDRESS";
-	
-	public static final String EC_REQUIRED_STREET = "EC_REQUIRED_STREET";
-	
-	public static final String EC_REQUIRED_CITY = "EC_REQUIRED_CITY";
-	
-	public static final String EC_REQUIRED_STATE = "EC_REQUIRED_STATE";
-	
-	public static final String EC_REQUIRED_COUNTRY = "EC_REQUIRED_COUNTRY";
-	
-	public static final String EC_REQUIRED_ZIP = "EC_REQUIRED_ZIP";
-	
-	public static final String EC_REQUIRED_PHONE = "EC_REQUIRED_FULL_ADDRESS";
-	
-
 
 }

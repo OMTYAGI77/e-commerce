@@ -40,5 +40,4 @@ public class AddressBO {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private UserBO user;
-
-	}
+}
