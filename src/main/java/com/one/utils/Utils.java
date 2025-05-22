@@ -40,6 +40,10 @@ public class Utils implements Serializable {
 	public static boolean isNotEmpty(Map map) {
 		return !(isEmpty(map));
 	}
+	
+	public static boolean isEmpty(Object[] objs) {
+        return (((null == objs) || (0 == objs.length)) ? true : false);
+    }
 
 	public static boolean isValidEmail(String email) {
 		String strEmail = Utils.getValidString(email);

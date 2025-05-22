@@ -15,5 +15,8 @@ public interface StringConstants {
 	public static final String COLON = ":";
 
 	public static final String HYPHEN = "-";
+	
+	 public static final String FORWARD_SLASH = "/";
+
 
 }

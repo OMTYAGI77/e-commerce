@@ -17,7 +17,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
+<<<<<<< HEAD
 @Table(name = "cart")
+=======
+@Table(name = "cart_tab")
+>>>>>>> 548e18bcbc27895e406ef2e6cb118600345487ef
 public class CartBO {
 
 	@Id
